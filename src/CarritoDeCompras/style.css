@@ -1,0 +1,109 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(58, 58, 58);
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+/* .noti{
+    position: fixed;
+    height: 50px;
+    width: 250px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    border-radius: 16px;
+    left: 1%;
+    bottom: 1%;
+    background-color: rgba(177, 0, 0, 0.438);
+    z-index: 3;
+} */
+
+.container{
+    margin: 15px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 13px;
+}
+
+.container article{
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+
+.container img{
+    object-fit: cover;
+    width: 70%;
+    height: 40%;
+}
+.btn{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(0, 132, 255);
+    width: 110px;
+    height: 35px;
+    border-radius: 16px;
+}
+.btn:hover{
+    background-color: rgb(0, 104, 202);
+    transition: .3s ease-in-out;
+}
+
+.iconCarro{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 132, 255);
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    top:1%;
+    right: 1%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.carroAside{
+    display: none;
+    position: fixed;
+    right: 0%;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.849);
+    z-index: 900;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.itemCarrito{
+    text-align: center;
+}
+
+.clearCarrito{
+    margin-left: 40%;
+    margin-top: 5px;
+}
+
+.iconCarro ~ input:checked ~ .carroAside {
+    display: block;
+}
