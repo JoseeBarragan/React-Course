@@ -5,7 +5,7 @@ export function App(){
   const [position, setPosition] = useState({x: 0, y: 0})
 
   useEffect(() => {
-    const handleMove = (event) => {
+    const handleMove = (event: PointerEvent) => {
         const {clientX, clientY} = event;
         setPosition({x: clientX, y: clientY})
     }
@@ -20,6 +20,7 @@ export function App(){
     <main>
         <div style={
             {
+                display: `${enable ? '': 'none'}`,
                 position: "absolute",
                 backgroundColor: "#09f",
                 borderRadius: "50%",

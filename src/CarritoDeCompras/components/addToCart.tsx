@@ -1,4 +1,4 @@
-import {createContext, useReducer, useState} from 'react'
+import {createContext, useReducer } from 'react'
 
 export const CartContext = createContext();
 
@@ -11,7 +11,7 @@ const reducer = (state, action) => {
             const { id } = actionPayload;
             const productInCart = state.findIndex(item => item.id === id)
             if(productInCart >= 0){
-                const newCart = [...state];
+                const newCart = structuredClone(state);
                 newCart[productInCart].quantity += 1;
                 return newCart
             }
