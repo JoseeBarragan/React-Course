@@ -1,0 +1,24 @@
+###
+POST http://localhost:3000
+Content-Type: application/json
+
+{   
+    "title": "Completando el POST"
+}
+
+###
+GET http://localhost:3000
+
+###
+PATCH  http://localhost:3000/1
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+###
+GET http://localhost:3000/?filter=completed
+
+###
+DELETE http://localhost:3000/true
