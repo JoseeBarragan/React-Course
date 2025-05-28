@@ -1,6 +1,5 @@
 import {Router} from 'express'
 import {TodoController} from '../Controller/TodoController.js'
-import { type } from 'happy-dom/lib/PropertySymbol.js'
 
 export function AppRouter () {
     const appRouter = Router()

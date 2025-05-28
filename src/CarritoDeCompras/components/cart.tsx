@@ -1,4 +1,4 @@
-import { useId } from "react"
+import React, { useId } from "react"
 import { useCart } from "../hooks/context.tsx";
 
 export function Cart (){

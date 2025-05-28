@@ -1,0 +1,51 @@
+body{
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    width: 400px;
+    gap: 50px;
+}
+.main textarea{
+    height: 150px;
+    width: 100%;
+    resize: none;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+main{
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-top: 300px;
+}
+main span svg{
+    position: absolute;
+    top: 54px;
+    left: 37.6%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+main select{   
+    width: 107%;
+    background-color: transparent;
+    border: 1px solid #5f6368;
+    border-radius: 6px;
+    padding: 5px;
+    color: rgb(0, 140, 255);
+    outline: none;
+}
+
+main select option{
+    background-color: rgb(51, 51, 51);
+}

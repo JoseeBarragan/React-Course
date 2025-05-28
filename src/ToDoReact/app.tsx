@@ -63,12 +63,6 @@ export function App() : JSX.Element {
             setTodos(data)
         })();
     }
-
-    // const filteredTodos = todos.filter(todo => {
-    //     if(filterSelected === TODO_FILTERS.ACTIVE) return !todo.completed
-    //     if(filterSelected === TODO_FILTERS.COMPLETED) return todo.completed
-    //     return todo
-    // })
     const active = todos.filter(todo => todo.completed === false).length
     return(
         <TodosContext.Provider value={{todos, setTodos, handleRemoveAllCompleted, handleAddTodo, filterSelected, handleFilter}}>
