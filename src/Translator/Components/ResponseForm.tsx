@@ -4,8 +4,6 @@ import { useTranslate } from "../app";
 
 export const ResponseForm = () => {
     const {state, handleLanResponse, loading} = useTranslate()
-    console.log(state)
-
     return(
         <form action="">
             <select id="" onChange={handleLanResponse} value={state.outputLan}>

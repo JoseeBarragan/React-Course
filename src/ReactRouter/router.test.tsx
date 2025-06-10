@@ -4,6 +4,7 @@ import {Router} from './app.tsx'
 import { getCurrentPath } from './utils.ts';
 import { Route } from './Route.tsx';
 import { Link } from './Link.tsx';
+import React from 'react';
 
 vi.mock('./utils.ts', () => ({
     getCurrentPath: vi.fn()
